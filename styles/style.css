@@ -6,8 +6,12 @@
 
 main{
     background-color: black;
+    padding: 10px;
 }
 
+h5{
+    margin: 5px 0px;
+}
 .data-box{
     display: flex;
     flex-direction: column;
@@ -16,20 +20,57 @@ main{
 
 .header{
     background-color: blue;
+    padding: 10px;
 }
 
 .hero{
     background-color: red;
+    padding: 10px;
 }
 
 .content{
     background-color: green;
+    padding: 10px;
 }
 
 .sidebar{
     background-color: blueviolet;
+    padding: 10px;
 }
 
 .footer{
     background-color: grey;
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .pc-corpus{
+        display: flex;
+        flex-direction: row;
+    }
+    .content{
+        width: 70%;
+    }
+    .sidebar{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .corpus{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 80%;
+    }
+    .pc-corpus{
+        display: flex;
+        flex-direction: row;
+    }
+    .content{
+        width: 80%;
+    }
+    .sidebar{
+        width: 20%;
+    }
 }
